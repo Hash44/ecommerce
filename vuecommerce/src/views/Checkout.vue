@@ -141,7 +141,7 @@ export default {
         document.title = 'Checkout | Djackets'
         this.cart = this.$store.state.cart
         if (this.cartTotalLength > 0) {
-            this.stripe = Stripe('pk_test_51H1HiuKBJV2qfWbD2gQe6aqanfw6Eyul5PO2KeOuSRlUMuaV4TxEtaQyzr9DbLITSZweL7XjK3p74swcGYrE2qEX00Hz7GmhMI')
+            this.stripe = Stripe('pk_test_51KmNAKG65Rp1LCDwt56Jju6v0jIyDxVbPC6CAbUPlzUZ9XEvxumpeAlKoiI38xtwGSIx2sxsb1RQb9dM16HoDeIJ00GLII5WV6')
             const elements = this.stripe.elements();
             this.card = elements.create('card', { hidePostalCode: true })
             this.card.mount('#card-element')
